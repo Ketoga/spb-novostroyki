@@ -1,0 +1,35 @@
+name: Ежедневный парсинг новостроек СПБ
+
+on:
+  schedule:
+    - cron: '0 5 * * *'  # каждый день в 08:00 по Москве (05:00 UTC)
+  workflow_dispatch:       # ручной запуск через кнопку на GitHub
+
+jobs:
+  parse:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Получить код
+        uses: actions/checkout@v4
+
+      - name: Установить Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Установить зависимости
+        run: pip install requests
+
+      - name: Запустить парсер
+        env:
+          TREND_SESSION: ${{ secrets.TREND_SESSION }}
+        run: python parser.py
+
+      - name: Сохранить данные в репозиторий
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "Обновление данных $(date +'%d.%m.%Y')"
+          git push
