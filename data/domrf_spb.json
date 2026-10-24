@@ -70,7 +70,7 @@
       {
         "name": "toSalePrice",
         "values": [
-          "22367772"
+          "22869552"
         ]
       },
       {
@@ -214,7 +214,6 @@
         },
         {
           "id": 2100,
-          "devGkId": 4657,
           "devInn": "7801559467",
           "name": "СЗ АЛЬФА"
         },
@@ -939,10 +938,6 @@
           "name": "Seven Suns Development"
         },
         {
-          "id": 4657,
-          "name": "Sun Development"
-        },
-        {
           "id": 6364,
           "name": "Yard Group"
         },
@@ -1067,7 +1062,7 @@
           "name": "Эталон"
         }
       ],
-      "total": 41
+      "total": 40
     },
     "errcode": "0"
   },
@@ -1554,5 +1549,5 @@
     },
     "errcode": "0"
   },
-  "updated_at": "2026-10-23T09:46:13.142289"
+  "updated_at": "2026-10-24T09:19:41.850719"
 }
