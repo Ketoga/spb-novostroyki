@@ -1518,13 +1518,6 @@
     },
     "errcode": "0"
   },
-  "commissioning": {
-    "data": {
-      "minYear": 2024,
-      "maxYear": 2031
-    },
-    "errcode": "0"
-  },
   "districts": {
     "data": {
       "list": [
@@ -1543,5 +1536,5 @@
     },
     "errcode": "0"
   },
-  "updated_at": "2026-11-09T13:39:52.387633"
+  "updated_at": "2026-11-10T13:17:01.767689"
 }
