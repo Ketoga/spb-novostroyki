@@ -84,6 +84,18 @@
         "values": [
           "0"
         ]
+      },
+      {
+        "name": "pricePerSquareMeterFrom",
+        "values": [
+          "172000"
+        ]
+      },
+      {
+        "name": "pricePerSquareMeterTo",
+        "values": [
+          "3000000"
+        ]
       }
     ],
     "errcode": "0"
@@ -1771,5 +1783,5 @@
     },
     "errcode": "0"
   },
-  "updated_at": "2026-11-13T12:53:28.755414"
+  "updated_at": "2026-11-14T11:57:23.929179"
 }
