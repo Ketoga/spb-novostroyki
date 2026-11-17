@@ -2,12 +2,6 @@
   "meta": {
     "data": [
       {
-        "name": "objClass",
-        "values": [
-          "0"
-        ]
-      },
-      {
         "name": "energyEff",
         "values": [
           "8",
@@ -1783,5 +1777,5 @@
     },
     "errcode": "0"
   },
-  "updated_at": "2026-11-16T13:24:03.511920"
+  "updated_at": "2026-11-17T14:09:23.230323"
 }
